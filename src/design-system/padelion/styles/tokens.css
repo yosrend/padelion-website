@@ -1,0 +1,209 @@
+/* Padelion design tokens — the single source of truth for colour, type,
+   space, radius and motion. Import this file to receive the whole theme. */
+
+:root {
+  /* brand */
+  --ink: #3a261c;
+  --ink-2: #4a3428;
+  --neon: #d4ff3a;
+  --neon-hover: #c6f21f;
+  --blue: #2d4e9c;
+  --blue-hover: #243f80;
+  --blue-tint: #eef2fa;
+  --on-blue-muted: #cbd5ec;
+  --white: #ffffff;
+
+  /* neutrals */
+  --page: #f6f7f4;
+  --fill: #f1f2ee;
+  --divider: #ecede8;
+  --border: #e1e3dd;
+  --card-border: #e4e6e0;
+  --dashed: #c9ccc4;
+
+  /* form errors only: a brick red that sits with the ink browns */
+  --danger: #a33a2a;
+  --danger-tint: #f8ebe8;
+
+  /* desk status: paid and done, needs a look */
+  --ok: #2f7a14;
+  --ok-tint: #e8f5dc;
+  --warn: #9a5b00;
+  --warn-tint: #fdf1dc;
+
+  /* the three courts, as they look in the hall */
+  --court-blue: var(--blue);
+  --court-green: #4fae1c;
+
+  /* text */
+  --text-1: #3a261c;
+  --text-2: #6b6e66;
+  --text-3: #9b9f95;
+
+  /* type */
+  --font-display: "Satoshi", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* space scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-9: 40px;
+  --space-10: 56px;
+  --space-11: 72px;
+  --space-12: 96px;
+  --space-13: 120px;
+
+  /* gutters */
+  /* content never runs wider than --content-max: on wide screens the gutter grows instead */
+  --content-max: 1280px;
+  --app-max: 1440px;
+  --gutter-public: max(80px, calc((100vw - var(--content-max)) / 2));
+  --gutter-desk: 40px;
+  --gutter-mobile: 16px;
+
+  /* radius */
+  --radius-pill: 999px;
+  --radius-card-public: 24px;
+  --radius-card-desk: 14px;
+  --radius-input: 12px;
+  --radius-slot: 12px;
+  --radius-button-desk: 10px;
+
+  /* motion */
+  --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+  --duration-ui: 180ms;
+  --duration-reveal: 400ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-ui: 0ms;
+    --duration-reveal: 0ms;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text-1);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.pds-num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Type roles */
+.pds-hero {
+  font-family: var(--font-display);
+  font-size: clamp(56px, 9vw, 120px);
+  line-height: 0.95;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+.pds-display {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 68px);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  margin: 0;
+}
+.pds-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.02;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+.pds-page-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+.pds-card-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+.pds-body {
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0;
+}
+.pds-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.pds-meta {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-2);
+}
+
+/* Liquid glass — only over photo or video, max 2 per screen */
+.pds-glass {
+  position: relative;
+  isolation: isolate;
+  /* a thin ink layer under the frost keeps white text readable on bright photos */
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.06) 55%, rgba(255, 255, 255, 0.1) 100%),
+    rgba(28, 20, 15, 0.22);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.08),
+    0 12px 40px rgba(20, 14, 10, 0.28);
+  color: #fff;
+}
+/* specular edge: light catching the top rim of the glass */
+.pds-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0) 70%, rgba(212, 255, 58, 0.25));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+.pds-glass .muted {
+  color: #dce3f3;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .pds-glass {
+    background: rgba(20, 34, 74, 0.94);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}

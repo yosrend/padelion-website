@@ -1,0 +1,53 @@
+{
+  "dependencies": {
+    "@cloudflare/vite-plugin": "^1.25.5",
+    "@gsap/react": "^2.1.2",
+    "@heroicons/react": "2.2.0",
+    "@react-three/drei": "^10",
+    "@react-three/fiber": "^9",
+    "@supabase/supabase-js": "^2.117.2",
+    "@tanstack/react-query": "^5.101.1",
+    "@tanstack/react-router": "1.170.41",
+    "@tanstack/react-start": "1.168.60",
+    "@tanstack/router-plugin": "1.168.42",
+    "canvas-confetti": "1",
+    "date-fns": "^4.1.0",
+    "gsap": "^3.15.0",
+    "jsqr": "^1.4.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "recharts": "^2.15.4",
+    "three": "^0.186.1",
+    "vite-tsconfig-paths": "^6.0.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^22.16.5",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^15.15.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.56.1",
+    "vite": "^8.0.16"
+  },
+  "name": "padelion",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "dev": "vite dev",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "sideEffects": false,
+  "type": "module"
+}
