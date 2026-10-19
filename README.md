@@ -55,17 +55,35 @@ Most padel venues in Jakarta still take bookings over WhatsApp. A player asks wh
 
 ## Screens
 
-| Book | Check-in |
+### For players
+
+<img src="docs/images/home-3d-courts.jpg" alt="Pick the court you actually want, 3D court picker" width="100%" />
+
+| Book your court | Held for you, 15 minutes |
 |---|---|
-| <img src="docs/images/book.jpg" alt="Booking page" /> | <img src="docs/images/checkin.jpg" alt="Check-in page" /> |
-| **Demo tour** | **Staff sign-in** |
-| <img src="docs/images/demo.jpg" alt="Demo tour" /> | <img src="docs/images/staff-login.jpg" alt="Staff sign-in" /> |
+| <img src="docs/images/book.jpg" alt="Booking page" /> | <img src="docs/images/hold-and-pay.jpg" alt="Hold and pay" /> |
+| **Your ticket** | **Check-in at the venue** |
+| <img src="docs/images/ticket.jpg" alt="Ticket with check-in QR" /> | <img src="docs/images/checkin.jpg" alt="Check-in page" /> |
 
 <p align="center">
-  <img src="docs/images/home-mobile.jpg" alt="Home on mobile" width="260" />
-  &nbsp;&nbsp;
-  <img src="docs/images/book-mobile.jpg" alt="Booking on mobile" width="260" />
+  <img src="docs/images/mobile-menu.jpg" alt="Mobile menu" width="230" />
+  &nbsp;
+  <img src="docs/images/mobile-rackets.jpg" alt="Racket picker on mobile" width="230" />
+  &nbsp;
+  <img src="docs/images/mobile-chat.jpg" alt="Desk chat on mobile" width="230" />
 </p>
+
+### For the venue
+
+<img src="docs/images/desk-bookings.jpg" alt="Front desk bookings" width="100%" />
+
+| Owner, this week | Payments to check |
+|---|---|
+| <img src="docs/images/owner-week-flat.jpg" alt="Owner week dashboard" /> | <img src="docs/images/desk-payments.jpg" alt="Payments to check" /> |
+| **Booking detail** | **Prices and staff** |
+| <img src="docs/images/desk-booking-detail.jpg" alt="Booking detail panel" /> | <img src="docs/images/owner-settings.jpg" alt="Prices and staff" /> |
+
+More in the [screen gallery](docs/screens.md).
 
 ## How it works
 
@@ -146,6 +164,7 @@ These accounts are created by the app on first sign-in and only reach demo data.
 
 | Doc | What is inside |
 |---|---|
+| [Screens](docs/screens.md) | Every page, player and venue |
 | [Product](docs/product.md) | Problem, users, flows, booking rules, scope |
 | [Architecture](docs/architecture.md) | How the app, database and jobs fit together |
 | [Routes](docs/routes.md) | Every page, who uses it and what it does |
