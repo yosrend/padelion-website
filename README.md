@@ -9,6 +9,8 @@
 A booking web app for a three-court padel venue in Kemang, South Jakarta.<br/>
 Players book and pay. The front desk and the owner run the day from one dashboard.
 
+[![CI](https://github.com/yosrend/padelion-website/actions/workflows/ci.yml/badge.svg)](https://github.com/yosrend/padelion-website/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-d4ff3a.svg)](LICENSE)
 ![React](https://img.shields.io/badge/React-19-20232a?logo=react&logoColor=61dafb)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)
 ![TanStack Start](https://img.shields.io/badge/TanStack-Start-ff4154)
@@ -151,6 +153,17 @@ bun run dev
 
 Then apply the database migrations in `supabase/migrations` to your Supabase project. Full steps in [docs/setup-and-deployment.md](docs/setup-and-deployment.md).
 
+## Quality checks
+
+```sh
+bun run lint        # ESLint
+bun run typecheck   # TypeScript
+bun run test        # unit tests for pricing, peak hours, overlaps and phone numbers
+bun run build       # production build
+```
+
+All four run on every push through GitHub Actions.
+
 ## Demo accounts
 
 | Role | Email | Password |
@@ -180,3 +193,7 @@ This is a working demo. Payments use a sandbox and WhatsApp messages are written
 ## Author
 
 Designed and built by [Yosep Rendi](https://github.com/yosrend), product designer at Morae Studio.
+
+## License
+
+[MIT](LICENSE) © 2026 Yosep Rendi

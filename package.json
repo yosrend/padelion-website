@@ -46,7 +46,9 @@
     "build:dev": "vite build --mode development",
     "dev": "vite dev",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
   },
   "sideEffects": false,
   "type": "module"

@@ -3,6 +3,8 @@ import { useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { addDays, isoAt, todayJkt } from "@/lib/padel";
 
+// Rows come from several tables and RPCs, so fields are read loosely and narrowed where used.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Row = Record<string, any>;
 
 export async function rpc(name: string, args: Record<string, unknown>) {
