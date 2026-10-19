@@ -19,7 +19,7 @@ Players book and pay. The front desk and the owner run the day from one dashboar
 
 [Features](#what-it-does) · [Screens](#screens) · [How it works](#how-it-works) · [Quick start](#quick-start) · [Docs](#documentation)
 
-<img src="docs/images/home.jpg" alt="Padelion home page" width="100%" />
+<a href="docs/images/hero.mp4"><img src="docs/images/hero.gif" alt="Padelion home page, scroll into the dome" width="100%" /></a>
 
 </div>
 
