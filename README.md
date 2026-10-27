@@ -17,7 +17,7 @@ Players book and pay. The front desk and the owner run the day from one dashboar
 ![Supabase](https://img.shields.io/badge/Supabase-Postgres%20%7C%20Auth%20%7C%20Realtime-3ecf8e?logo=supabase&logoColor=white)
 ![three.js](https://img.shields.io/badge/three.js-3D-000000?logo=threedotjs&logoColor=white)
 ![GSAP](https://img.shields.io/badge/GSAP-motion-88ce02?logo=greensock&logoColor=black)
-![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-f38020?logo=cloudflare&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-Nitro-000000?logo=vercel&logoColor=white)
 
 [Features](#what-it-does) · [Screens](#screens) · [How it works](#how-it-works) · [Quick start](#quick-start) · [Docs](#documentation)
 
@@ -128,7 +128,7 @@ stateDiagram-v2
 | Styling | A custom CSS design system in `src/design-system/padelion` (no Tailwind) |
 | Motion and 3D | GSAP ScrollTrigger, three.js with React Three Fiber and drei |
 | Other | qrcode, jsQR, canvas-confetti, Recharts, date-fns, zod, Heroicons |
-| Hosting | Cloudflare Workers (any host that runs TanStack Start works) |
+| Hosting | Vercel through the Nitro plugin (any host that runs TanStack Start works) |
 
 ## Project structure
 

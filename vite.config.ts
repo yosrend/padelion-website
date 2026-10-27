@@ -1,6 +1,5 @@
 import path from "path";
 import { defineConfig } from "vite";
-import tsConfigPaths from "vite-tsconfig-paths";
 import { nitro } from "nitro/vite";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import viteReact from "@vitejs/plugin-react";
@@ -12,11 +11,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(import.meta.dirname, "./src"),
     },
   },
   plugins: [
-    tsConfigPaths({ projects: ["./tsconfig.json"] }),
     tanstackStart(),
     // Nitro picks the Vercel output format automatically when building on Vercel.
     nitro(),

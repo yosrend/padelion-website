@@ -5,7 +5,7 @@ Browser (React 19, TanStack Router)
    |  public pages: server rendered, guest calls go through RPCs
    |  staff pages: client rendered, signed-in Supabase session
    v
-TanStack Start server (Cloudflare Worker)
+TanStack Start server (Nitro, runs as a Vercel function)
    |  server functions: demo staff accounts (service role, server only)
    v
 Supabase
